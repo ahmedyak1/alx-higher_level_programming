@@ -7,4 +7,5 @@ def divisible_by_2(my_list=[]):
             numbers_divisible_by_2.append(False)
         else:
            numbers_divisible_by_2.append(True) 
- return (numbers_divisible_by_2)
+
+    return (numbers_divisible_by_2)
