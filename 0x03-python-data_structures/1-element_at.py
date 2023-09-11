@@ -1,9 +1,6 @@
 #!/usr/bin/python3
-"""
-    return an element from a list
-    args:my_list[],
-         idx
-"""
+
+
 def element_at(my_list, idx):
     if idx < 0 or idx >= (len(my_list)):
         return None
