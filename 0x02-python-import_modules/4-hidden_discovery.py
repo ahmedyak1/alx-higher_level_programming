@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-import hidden_4
 
 if _name_ == "_main_":
+    import hidden_4
+
     noms = dir(hidden_4)
-    for nom in noms:
-        if nom[:2] != "__":
-            print(nom)
+    for name in noms:
+        if name[:2] != "__":
+            print(name)
