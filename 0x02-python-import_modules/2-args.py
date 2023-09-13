@@ -2,7 +2,7 @@
 import sys
 arguments_len = len(sys.argv) - 1
 
-if name == "_main_":
+if name == "__main__":
     
     if arguments_len == 0:
         print("0 arguments.")
