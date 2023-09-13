@@ -11,4 +11,4 @@ if name == "_main_":
     else:
         print("{} arguments:".format(arguments_len))
     for k in range(arguments_len):
-        print("{}: {}".format(k + 1, sys.argv[k + 1]
+        print("{}: {}".format(k + 1, sys.argv[k + 1])
