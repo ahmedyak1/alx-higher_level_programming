@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-from sys import argv
 
-if _name_ == "_main_":
-    tot = 0
+if __name__ == "__main__":
+    from sys import argv
+
+    toota = 0
     for k in range(len(argv) - 1):
-        tot += int(argv[k + 1])
-    print("{}".format(tot))
+        toota += int(argv[k + 1])
+    print("{}".format(toota))
+
