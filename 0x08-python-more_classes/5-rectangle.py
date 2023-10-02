@@ -62,13 +62,12 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         else:
             self.__height = value
-			
-	def area(self):
+            
+    def area(self):
         """area rectangle
-
         Returns:area
         """
-        return  self.__width * self.__height
+        return self.__width * self.__height
 
     def perimeter(self):
         """perimeter rectangle
@@ -78,9 +77,9 @@ class Rectangle:
         if  self.width == 0 or self.__height == 0 :
             return 0
         else:
-            return  (self.__height + self.__width) * 2
-			
-	def __str__(self):
+            return (self.__height + self.__width) * 2
+            
+    def __str__(self):
         """rectangle character 
 
         Returns: the rectangle
@@ -98,16 +97,14 @@ class Rectangle:
         recta.pop()
 
         return "".join(recta)
-
-	def __repr__(self):
+        
+    def __repr__(self):
         """string representation  rectangle.
 
         Returns:rectangle representation.
         """
-		pres = "Rectangle({:d}, {:d})".format(self.__width, self.__height)
-        return pres
-		
-	def __del__(self):
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
+    def __del__(self):
         """del instance class
         """
         print("{:s}".format("Bye rectangle..."))
