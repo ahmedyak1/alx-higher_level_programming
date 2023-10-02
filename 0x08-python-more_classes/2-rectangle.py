@@ -62,6 +62,7 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         else:
             self.__height = value
+
 			
 	def area(self):
         """area rectangle
@@ -79,5 +80,4 @@ class Rectangle:
             return 0
         else:
             return  (self.__height + self.__width) * 2
-
 
