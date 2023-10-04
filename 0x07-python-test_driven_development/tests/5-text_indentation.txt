@@ -1,0 +1,79 @@
+# The ``5-text_indentation`` module
+============================================
+How to use 5-text_indentation.py
+============================================
+
+This library has one function called ``text_indentation()``
+
+``text_indentation()`` prints a text with 2 new lines after each of these
+characters: ., ? and :
+
+Importing the function matrix_divided.
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Passing the given text.
+    >>> text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere?""")
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    <BLANKLINE>
+    Quonam modo?
+    <BLANKLINE>
+    Utrum igitur tibi litteram videor an totas paginas commovere?
+    <BLANKLINE>
+
+Passing a text with bigg space at the beginning.
+    >>> text_indentation("        toot Ahmed")
+    toot Ahmed
+
+Passing an empty string as text.
+    >>> text_indentation("")
+
+
+Printing a word with spaces two space surrendered it.
+    >>> text_indentation("    Maroc   ")
+    Maroc
+
+
+::
+Printing a word with a special character at the end.
+    >>> text_indentation("    Toto   .")
+    Toto.
+    <BLANKLINE>
+::
+Passing a text with space between words and a special character at end.
+    >>> text_indentation("hello baby girl?    how old you?")
+    hello baby girl?
+    <BLANKLINE>
+    how old you?
+    <BLANKLINE>
+::
+Passing None as text:
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
+::
+Passing a non-string as text.
+    >>> text_indentation(405049)
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
+::
+Passing no arguments to text_indentation.
+    >>> text_indentation()
+    Traceback (most recent call last):
+        ...
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
+::
+Passing no arguments to set.
+    >>> text_indentation({"uno": 1, "dos": 2})
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+::
+
+Passing more than one argument to text_indentation.
+    >>> text_indentation("hellllllo", "hello mo**ter") #doctest: +ELLIPSIS
+    Traceback (most recent call last):
+        ...
+    TypeError: text_indentation() takes 1 positional argument but ...
+
