@@ -15,9 +15,3 @@ for k in argv[1:]:
     jl.append(k)
 
 save_file(jl, 'add_item.json')
-
-
-add_item.json
-
-["Best", "School", "89", "Python", "C"]
-
