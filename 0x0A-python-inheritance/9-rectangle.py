@@ -10,29 +10,28 @@ class Rectangle(BaseGeometry):
     """Class Rectangle"""
 
     def __init__(self, width, height):
-         """Instance rectangle
+       """Instance rectangle
 
         Args:
             width width rectangle
             height height rectangle
         """
-        self.__height = height
         self.__width = width
-        self.integer_validator("height", height)
+        self.__height = height
         self.integer_validator("width", width)
-        
+        self.integer_validator("height", height)
 
     def area(self):
-        """Area Rectangle.
+        """Area Rectangle
 
         Returns: area
         """
-        return  self.__height * self.__width 
+        return self.__width * self.__height
 
     def __str__(self):
         """string representation Rectangle.
 
-        Return:String representation rectangle.
+        Return:String representation rectangle
         """
         return "[Rectangle] {:d}/{:d}".format(self.__width, self.__height)
 
