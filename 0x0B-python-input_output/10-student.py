@@ -3,7 +3,7 @@
 
      
         
- class Student:
+class Student:
     """
     Class  student
     """
