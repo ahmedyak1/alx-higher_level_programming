@@ -15,7 +15,7 @@ class Rectangle(Base):
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """Creates new instances of rectangle.
+        """Creates new instances of rectangle
 
         Attributes: width rectangle
                  height rectangle
