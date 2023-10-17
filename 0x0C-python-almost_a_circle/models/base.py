@@ -10,7 +10,7 @@ import csv
 class Base:
     """Class defines Base
 
-     Attributes: define each inst.
+     Attributes: define each inst
     """
     nbr_obj = 0
 
