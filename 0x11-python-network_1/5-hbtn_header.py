@@ -1,0 +1,13 @@
+#!/usr/bin/python3
+"""
+Script that takes in a URL, show request and send request
+"""
+import requests
+import sys
+
+
+if __name__ == "__main__":
+    url = sys.argv[1]
+    response = requests.get(url)
+    v = response.headers.get("X-Request-Id")
+    print(v)
